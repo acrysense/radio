@@ -19,28 +19,28 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<section class="header" id="header">
+		<header class="header" id="header">
 			<div class="container container--lg">
 				<div class="header__wrapper">
 					<a href="index.html" class="header__logotype">
 						<img src="img/logotype-novoe.svg" width="151" height="40" alt="НОВОЕ РАДИО">
 					</a>
-					<nav class="header-nav header__nav">
-						<ul class="header-nav__list">
-							<li class="header-nav__item">
-								<a href="#" class="header-nav__link">Реклама</a>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#advertisement" class="nav__link">Реклама</a>
 							</li>
-							<li class="header-nav__item">
-								<a href="#" class="header-nav__link">Спецпроекты</a>
+							<li class="nav__item">
+								<a href="#special-projects" class="nav__link">Спецпроекты</a>
 							</li>
-							<li class="header-nav__item">
-								<a href="#" class="header-nav__link">Изготовление ролика</a>
+							<li class="nav__item">
+								<a href="#offers" class="nav__link">Изготовление ролика</a>
 							</li>
-							<li class="header-nav__item">
-								<a href="#" class="header-nav__link">Стоимость</a>
+							<li class="nav__item">
+								<a href="#prices" class="nav__link">Стоимость</a>
 							</li>
-							<li class="header-nav__item">
-								<a href="#" class="header-nav__link">Контакты</a>
+							<li class="nav__item">
+								<a href="#contacts" class="nav__link">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -51,10 +51,45 @@
 						<span class="c-phone__title">8 (017) 304 80 00</span>
 					</a>
 					<a href="#" class="header__btn btn btn--sm" target="_blank">Оставить заявку</a>
+					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
 				</div>
 			</div>
-		</section>
+		</header>
 		<!-- end of header -->
+		<!-- mobile menu -->
+		<div class="mobile-menu" id="mobile-menu">
+			<div class="mobile-menu__wrap">
+				<nav class="nav mobile-menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#advertisement" class="nav__link">Реклама</a>
+						</li>
+						<li class="nav__item">
+							<a href="#special-projects" class="nav__link">Спецпроекты</a>
+						</li>
+						<li class="nav__item">
+							<a href="#offers" class="nav__link">Изготовление ролика</a>
+						</li>
+						<li class="nav__item">
+							<a href="#prices" class="nav__link">Стоимость</a>
+						</li>
+						<li class="nav__item">
+							<a href="#contacts" class="nav__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<p class="mobile-menu__description">
+					Время работы: пн-чт 8:30-17:30, пт 8:30-16:30<br>
+					Адрес: пр-т Пушкина, 39, офис 2, блок “Г”<br>
+					<a href="tel:80173048000">8 (017) 304 80 00</a>
+				</p>
+			</div>
+		</div>
+		<!-- end of mobile menu -->
 		<!-- content -->
 		<div class="wrapper__content">
 			<!-- main -->
@@ -224,6 +259,66 @@
 							</div>
 							<a href="#" class="section-heading__btn btn" target="_blank">Заполнить бриф</a>
 						</div>
+						<div class="special-projects__slider">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<article class="special-projects__slide">
+											<div class="special-projects__body">
+												<span class="special-projects__status">Эфирный проект</span>
+												<div class="special-projects__content content">
+													<h3>“Хочу учиться” и “Это блиц, детка!”</h3>
+													<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+													<p>
+														<b>Заголовок для списка</b>
+													</p>
+													<ul>
+														<li>Маркированный список</li>
+														<li>Маркированный список</li>
+														<li>Маркированный список</li>
+													</ul>
+												</div>
+											</div>
+											<a href="#" class="special-projects__img">
+												<img src="img/special-projects-img.jpg" alt="Image">
+											</a>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="special-projects__slide">
+											<div class="special-projects__body">
+												<span class="special-projects__status">Эфирный проект</span>
+												<div class="special-projects__content content">
+													<h3>“Хочу учиться” и “Это блиц, детка!”</h3>
+													<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+													<p>
+														<b>Заголовок для списка</b>
+													</p>
+													<ul>
+														<li>Маркированный список</li>
+														<li>Маркированный список</li>
+														<li>Маркированный список</li>
+													</ul>
+												</div>
+											</div>
+											<a href="#" class="special-projects__img">
+												<img src="img/special-projects-img.jpg" alt="Image">
+											</a>
+										</article>
+									</div>
+								</div>
+							</div>
+							<button class="swiper-button-prev" aria-label="Назад">
+								<svg class="swiper-button-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+								</svg>
+							</button>
+							<button class="swiper-button-next" aria-label="Далее">
+								<svg class="swiper-button-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+								</svg>
+							</button>
+						</div>
 					</div>
 				</section>
 				<!-- end of special projects -->
@@ -231,7 +326,32 @@
 			<!-- end of section green -->
 			<!-- offers -->
 			<section class="offers" id="offers">
-				<div class="container"></div>
+				<div class="container">
+					<div class="offers__wrapper">
+						<div class="offers__body">
+							<h2 class="offers__title">Продакшн-студия предлагает</h2>
+							<ul class="offers__list">
+								<li class="offers__list-item">
+									<span class="offers__list-elem">Подготовка сценариев для аудиоролика</span>
+								</li>
+								<li class="offers__list-item">
+									<span class="offers__list-elem">Запись дикторского текста</span>
+								</li>
+								<li class="offers__list-item">
+									<span class="offers__list-elem">Запись саундтрека к видеоролику</span>
+								</li>
+								<li class="offers__list-item">
+									<span class="offers__list-elem">Адаптация видеоролика к белорусскому рынку</span>
+								</li>
+								<li class="offers__list-item">
+									<span class="offers__list-elem">Запись текста для видеопрезентации</span>
+								</li>
+							</ul>
+							<a href="#" class="offers__btn btn btn--green">Заполнить бриф</a>
+						</div>
+						<div class="offers__tabs tabs"></div>
+					</div>
+				</div>
 			</section>
 			<!-- end of offers -->
 			<!-- section grey -->
@@ -364,6 +484,268 @@
 						<div class="section-heading">
 							<div class="section-heading__group">
 								<h2 class="section-heading__title">Вопросы-ответы</h2>
+							</div>
+						</div>
+						<div class="c-accordeon faq__wrapper">
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Какую позицию занимает Новое радио на рынке?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+										<p>
+											<b>Заголовок для списка</b>
+										</p>
+										<ol>
+											<li>Нумерованный список</li>
+											<li>Нумерованный список</li>
+											<li>Нумерованный список</li>
+										</ol>
+										<h1>Заголовок 1 уровня</h1>
+										<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Домах имеет если моей мир, послушавшись пояс последний, первую маленький несколько до обеспечивает выйти текстов? Текстов правилами живет предупреждал своего.</p>
+										<h2>Заголовок 2 уровня</h2>
+										<p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Океана, предложения толку последний парадигматическая большого гор своих напоивший диких всемогущая это снова ее проектах по всей жизни, заманивший буквоград раз?</p>
+										<h3>Заголовок 3 уровня</h3>
+										<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукописи дороге речью своего агентство своих, большого что живет рыбного города которой бросил. То правилами текстами текста, это жизни вопроса?</p>
+										<h4>Заголовок 4 уровня</h4>
+										<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Языкового имени ipsum диких, агентство о то деревни. Текста свое дал океана все пояс использовало жаренные курсивных заглавных власти языком.</p>
+										<h5>Заголовок 5 уровня</h5>
+										<p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Своих свою предложения толку заглавных текст точках lorem текста по всей приставка они но гор своего, себя, не страну за последний.</p>
+										<h6>Заголовок 6 уровня</h6>
+										<p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Рыбного всемогущая осталось собрал, силуэт, вскоре обеспечивает дороге сбить о семь дорогу, ведущими страна одна. За дороге все сих вдали?</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Какая целевая аудитория у Нового радио?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Сколько стоит реклама на Новом радио?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Какие сроки оплаты?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Что нужно сделать, чтобы разместить рекламу на Новом радио?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Что нужно сделать, чтобы записать ролик?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Сколько стоит запись ролика?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Можно ли разместить рекламу с сегодня на завтра?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Сколько нужно дней для запуска рекламной кампании в эфире Нового радио?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Можно ли транслировать рекламу не на всю страну, а на определенный город или область?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Можно ли разыграть подарки в эфире?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
+							</div>
+							<div class="c-accordeon__item">
+								<button class="c-accordeon__trigger">
+									<span>Почему Новое радио?</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<div class="c-accordeon__wrapper">
+									<div class="content c-accordeon__content">
+										<p>Стоимость ротации ролика в рекламном блоке зависит от:</p>
+										<ul>
+											<li>месяца размещения,</li>
+											<li>хронометража ролика,</li>
+											<li>времени выхода,</li>
+											<li>расположения ролика в рекламном блоке (первая, вторая, предпоследняя и последняя позиции).</li>
+										</ul>
+										<p>Вы можете <a href="#" target="_blank">заполнить форму</a>. Наш менеджер в течение часа (если форма заполнена в рабочее время) пришлет стоимость вашего размещения.</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
