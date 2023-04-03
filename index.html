@@ -751,7 +751,7 @@
 									<div class="tabs__wrapper is--active">
 										<div class="audio-list">
 											<div class="audio-list__column">
-												<div class="audio-list__item">
+												<button class="audio-list__item play-btn-audio" data-track-id="0" data-track-name="Мужской голос 1" data-track-help="Глубокий" data-track-src="http://d.zaix.ru/3jnj.mp3">
 													<svg class="audio-list__icon">
 														<use xlink:href="img/sprite.svg#icon-play-round"></use>
 													</svg>
@@ -759,37 +759,37 @@
 														<span class="audio-list__title">Мужской голос 1</span>
 														<span class="audio-list__help">Глубокий</span>
 													</div>
-												</div>
-												<div class="audio-list__item">
+												</button>
+												<button class="audio-list__item play-btn-audio" data-track-id="1" data-track-name="Мужской голос 2" data-track-help="Бархатный" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
 													<svg class="audio-list__icon">
 														<use xlink:href="img/sprite.svg#icon-play-round"></use>
 													</svg>
 													<div class="audio-list__body">
 														<span class="audio-list__title">Мужской голос 2</span>
-														<span class="audio-list__help">Глубокий</span>
+														<span class="audio-list__help">Бархатный</span>
 													</div>
-												</div>
-												<div class="audio-list__item">
+												</button>
+												<button class="audio-list__item play-btn-audio" data-track-id="2" data-track-name="Мужской голос 3" data-track-help="Деловой" data-track-src="http://d.zaix.ru/3jnj.mp3">
 													<svg class="audio-list__icon">
 														<use xlink:href="img/sprite.svg#icon-play-round"></use>
 													</svg>
 													<div class="audio-list__body">
 														<span class="audio-list__title">Мужской голос 3</span>
-														<span class="audio-list__help">Глубокий</span>
+														<span class="audio-list__help">Деловой</span>
 													</div>
-												</div>
-												<div class="audio-list__item">
+												</button>
+												<button class="audio-list__item play-btn-audio" data-track-id="3" data-track-name="Мужской голос 4" data-track-help="Глубокий, бархатный, деловой" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
 													<svg class="audio-list__icon">
 														<use xlink:href="img/sprite.svg#icon-play-round"></use>
 													</svg>
 													<div class="audio-list__body">
 														<span class="audio-list__title">Мужской голос 4</span>
-														<span class="audio-list__help">Глубокий</span>
+														<span class="audio-list__help">Глубокий, бархатный, деловой</span>
 													</div>
-												</div>
+												</button>
 											</div>
 											<div class="audio-list__column">
-												<div class="audio-list__item">
+												<button class="audio-list__item play-btn-audio" data-track-id="0" data-track-name="Женский голос 1" data-track-help="Глубокий" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
 													<svg class="audio-list__icon">
 														<use xlink:href="img/sprite.svg#icon-play-round"></use>
 													</svg>
@@ -797,25 +797,25 @@
 														<span class="audio-list__title">Женский голос 1</span>
 														<span class="audio-list__help">Глубокий</span>
 													</div>
-												</div>
-												<div class="audio-list__item">
+												</button>
+												<button class="audio-list__item play-btn-audio" data-track-id="1" data-track-name="Женский голос 2" data-track-help="Бархатный" data-track-src="http://d.zaix.ru/3jnj.mp3">
 													<svg class="audio-list__icon">
 														<use xlink:href="img/sprite.svg#icon-play-round"></use>
 													</svg>
 													<div class="audio-list__body">
 														<span class="audio-list__title">Женский голос 2</span>
-														<span class="audio-list__help">Глубокий</span>
+														<span class="audio-list__help">Бархатный</span>
 													</div>
-												</div>
-												<div class="audio-list__item">
+												</button>
+												<button class="audio-list__item play-btn-audio" data-track-id="2" data-track-name="Женский голос 3" data-track-help="Деловой" data-track-src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
 													<svg class="audio-list__icon">
 														<use xlink:href="img/sprite.svg#icon-play-round"></use>
 													</svg>
 													<div class="audio-list__body">
 														<span class="audio-list__title">Женский голос 3</span>
-														<span class="audio-list__help">Глубокий</span>
+														<span class="audio-list__help">Деловой</span>
 													</div>
-												</div>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1459,6 +1459,63 @@
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- player -->
+	<div class="player player--hidden" id="player">
+		<div class="container">
+			<audio id="player-audio">
+				<source id="source-audio" src="" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<div class="player__wrapper">
+				<div class="player__group player__group--flex">
+					<div class="player__controls">
+						<button class="player__control player__control--play" aria-label="Запустить/пауза">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-play"></use>
+							</svg>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-pause"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="player__data">
+						<span class="plaer__value plaer__value--current">0:00</span>
+						<div class="player__timeline">
+							<div class="player__progress"></div>
+						</div>
+						<span class="plaer__value plaer__value--length">0:00</span>
+					</div>
+					<div class="player__controls">
+						<button class="player__control player__control--back" aria-label="Далее">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-back-track"></use>
+							</svg>
+						</button>
+						<button class="player__control player__control--next" aria-label="Далее">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-next-track"></use>
+							</svg>
+						</button>
+						<button class="player__control player__control--reload" aria-label="Перезагрузить">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-reload"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="player__group">
+					<h3 class="player__title"></h3>
+					<span class="player__help"></span>
+				</div>
+				<button class="player__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-circle"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- end of player -->
 	<!-- modals -->
 	<div class="modal" id="modal-promo">
 		<div class="modal__scroll">
